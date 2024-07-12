@@ -706,7 +706,13 @@ module Fluent
               @source_location_key,
               @span_id_key,
               @trace_key,
-              @trace_sampled_key
+              @trace_sampled_key,
+              # kubernetes fields
+              'docker',
+              'kubernetes',
+              # CRI fields.
+              'stream',
+              'logtag'
             ]
 
             # If the log is json, we want to export it as a structured log
