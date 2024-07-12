@@ -1,5 +1,5 @@
 Gem::Specification.new do |gem|
-  gem.name          = 'fluent-plugin-google-cloud'
+  gem.name          = 'fluent-plugin-vadimberezniker-gcp'
   gem.description   = <<-DESCRIPTION
    Fluentd plugins for the Stackdriver Logging API, which will make logs
    viewable in the Stackdriver Logs Viewer and can optionally store them
@@ -10,18 +10,15 @@ Gem::Specification.new do |gem|
   gem.homepage      =
     'https://github.com/GoogleCloudPlatform/fluent-plugin-google-cloud'
   gem.license       = 'Apache-2.0'
-  gem.version       = '0.13.2'
-  gem.authors       = ['Stackdriver Agents Team']
-  gem.email         = ['stackdriver-agents@google.com']
+  gem.version       = '0.1.0'
+  gem.authors       = ['Vadim Berezniker']
+  gem.email         = ['vadim@berezniker.com']
   gem.required_ruby_version = Gem::Requirement.new('>= 2.6')
 
   gem.files         = Dir['**/*'].keep_if { |file| File.file?(file) }
   gem.test_files    = gem.files.grep(/^(test)/)
   gem.require_paths = ['lib']
 
-  # NOTE: In order to update the Fluentd version, please update both here and
-  # also the fluentd version in
-  # https://github.com/GoogleCloudPlatform/google-fluentd/blob/master/config/software/fluentd.rb.
   gem.add_runtime_dependency 'fluentd', '~> 1.16'
   gem.add_runtime_dependency 'google-api-client', '0.53.0'
   gem.add_runtime_dependency 'googleapis-common-protos', '1.4.0'
