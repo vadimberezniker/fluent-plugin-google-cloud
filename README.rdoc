@@ -1,3 +1,11 @@
+This is a fork of GoogleCloudPlatform/fluent-plugin-google-cloud that currently
+only relaxes the version dependency on fluentd to avoid causing dependency
+resolution issues for projects that may want to depend on this gem.
+
+This fork is unaffiliated with Google.
+
+Original readme:
+
 = Google Cloud Logging plugin for {fluentd}[http://github.com/fluent/fluentd]
 
 fluent-plugin-google-cloud gem includes two plugins:
